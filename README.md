@@ -1,2 +1,11 @@
-# sayali1008.github.io
-Professional Portfolio
+# Data Scientist
+
+## Education
+- MS
+- B.Tech
+
+## Work Experience
+- Software Engineer
+
+## Projects
+
