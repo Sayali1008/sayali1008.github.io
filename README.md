@@ -34,8 +34,9 @@
 
 ## Projects
 
-**Deconstructing Sexual Stereotypes in Large Language Models**
+**Deconstructing Sexual Stereotypes in Large Language Models**   
 [Paper](https://arxiv.org/pdf/2307.00101.pdf)
+
 - Generated gender-neutral text from 700k WikiBio dataset using rule-based methods and regular expressions.
 - Generated prompts by appending sexual identity trigger words to contextualize LLM responses for analysis.
 - Employed SHAP analysis to detect and mitigate unconscious bias in LLM outputs formulating text-to-text style transfer with chain-of-thought prompting reducing regard difference from 0.15 to 0.06.
@@ -60,8 +61,9 @@
 - Developed ML-based system supporting 1 million users providing recommendations within 500 ms for 40% of user requests.
 - Built deployment server in Flask to host containerized models using Docker and listen to Kafka stream requests.
 
-**Deep Learning Based Face Mask Detection and Crowd Counting**
+**Deep Learning Based Face Mask Detection and Crowd Counting**   
 [Paper](https://ieeexplore.ieee.org/document/9417826)
+
 - Developed a model to evaluate social distance between people using pre-trained weights provided by YOLOv3, with an accuracy of 90%.
 - Designed a crowd counting model to calculate the number of people utilizing object detection, achieving an accuracy of 94%.
 
