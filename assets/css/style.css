@@ -333,6 +333,7 @@ h6 {
 
 #hero .hero-img img {
   height: 40em;
+  width: 30em;
 }
 
 #hero .container {
@@ -467,7 +468,6 @@ section {
   color: #fff;
 }
 
-
 .about .contact i {
   font-size: 16px;
   line-height: 0;
@@ -477,20 +477,14 @@ section {
 # Experience
 --------------------------------------------------------------*/
 .experience .icon-box {
-  padding: 30px;
+  padding: 2em;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  margin: 0 10px 40px 10px;
+  margin: 0.2em;
+  margin-bottom: 1.5em;
   background: #fff;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-  transition: all 0.3s ease-in-out;
-}
-
-.experience .icon {
-  position: absolute;
-  left: -20px;
-  top: calc(50% - 30px);
+  box-shadow: 0 0.5em 1em 0 rgba(68, 88, 144, 0.1);
 }
 
 .experience .icon i {
@@ -500,19 +494,22 @@ section {
 }
 
 .experience .title {
-  /* margin-left: 40px; */
   color: #0f394c;
   font-weight: 600;
-  margin-bottom: 15px;
   font-size: 24px;
   text-align: center;
-  height: 2em;
-  padding-bottom: 2.5em;
+}
+
+.experience .subtitle {
+  color: #1c698c;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .experience .description {
   font-size: 15px;
-  /* margin-left: 40px; */
   line-height: 24px;
   margin-bottom: 0;
   text-align: justify;
@@ -521,49 +518,8 @@ section {
 /*--------------------------------------------------------------
 # Projects
 --------------------------------------------------------------*/
-.projects .projects-item {
-  margin: 1em;
-  padding-top: 0.25em;
-  /* height: 25rem;
-  width: 25rem; */
-}
-
 .projects .projects-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(255, 255, 255, 0.6);
-  padding: 1em;
-  /* margin-bottom: 10rem; */
-}
-
-.projects .projects-wrap .projects-info::before {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  border-top: 3px solid #bdc6ca;
-  border-left: 3px solid #bdc6ca;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
-.projects .projects-wrap .projects-info::after {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 35px;
-  right: 35px;
-  border-bottom: 3px solid #bdc6ca;
-  border-right: 3px solid #bdc6ca;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
+  margin: 0.2em;
 }
 
 .projects .projects-wrap h4 {
@@ -571,51 +527,13 @@ section {
   color: #0f394c;
   font-weight: 600;
   margin-bottom: 0.75em;
+  text-align: center;
 }
 
 .projects .projects-wrap p {
   color: #0f394c;
   font-size: 15px;
   text-align: justify;
-}
-
-.projects .projects-wrap .projects-links {
-  text-align: center;
-  z-index: 4;
-}
-
-.projects .projects-wrap .projects-links a {
-  color: #49b5e7;
-  margin: 0 2px;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.projects .projects-wrap .projects-links a:hover {
-  color: #8dd0f0;
-}
-
-.projects .projects-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-}
-
-.projects .projects-wrap:hover .projects-info {
-  opacity: 1;
-}
-
-.projects .projects-wrap:hover .projects-info::before {
-  top: 15px;
-  left: 15px;
-}
-
-.projects .projects-wrap:hover .projects-info::after {
-  bottom: 15px;
-  right: 15px;
 }
 
 /*--------------------------------------------------------------

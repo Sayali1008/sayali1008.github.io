@@ -16,7 +16,7 @@
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
   <!-- <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
@@ -50,11 +50,11 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <div class="col-lg-6 col-sm-12 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1>Hello, I'm Sayali!</h1>
           <h2>Data Scientist | Machine Learning Engineer | Software Engineer</h2>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+        <div class="col-lg-6 col-sm-12 order-1 order-lg-2 hero-img">
           <img src="assets/img/Sayali.jpeg" class="img-fluid" alt="">
         </div>
       </div>
@@ -67,7 +67,6 @@
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
-
         <div class="row">
           <div class="col-lg-6 icon-boxes d-flex flex-column align-items-stretch py-5 px-lg-5">
             <h3>ABOUT ME</h3>
@@ -77,11 +76,9 @@
               University of Mumbai, where I graduated as Valedictorian. I am skilled in information visualization, data
               modeling, and natural language processing. I am currently working as a Software Engineer and I'm always up
               for a new challenge.</p>
-
             <p>Proficient in Python, Java, and C#, and experienced in data-related technologies, I have always possessed
               a strong passion for solving puzzles. That's how I look at data sets and machine learning problems. And
               that's what drives me to solve them.</p>
-
             <hr />
             <div class="contact">
               <a href="https://www.linkedin.com/in/sayalimoghe/"><i class="bx bxl-linkedin"></i></a>
@@ -121,7 +118,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
 
@@ -133,45 +129,64 @@
           <h2>Experience</h2>
         </div>
 
-        <div class="row">
-          <div class="col icon-box">
-            <h4 class="title">Software Engineer @ Empyra</h4>
-            <p class="description">
-              I transformed user experiences and optimized system performance through various
-              initiatives. I revamped backend flows for faster navigation, boosting user activity by 14%. I
-              implemented 5+ reusable control mechanisms for a low-latency platform, improving client service
-              efficiency. Furthermore, I optimized databases using MS SQL Server, consolidating them and lowering
-              storage costs significantly. I spearheaded the transition to React for front-end development, increasing
-              dashboard usage by 11%. Beyond that, I actively participated in strategic planning, conceptualizing
-              enhancements across various system modules while prioritizing security concerns.
-            </p>
+        <div class="row display-flex">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="icon-box">
+              <h4 class="title">Software Engineer</h4>
+              <h5 class="subtitle">Empyra</h5>
+              <p class="description">
+              <ul>
+                <li>Revamped backend flows on the product website for faster navigation, increasing user activity rate
+                  by 14%.</li>
+                <li>Deployed 5+ control mechanisms optimizing for reusability, transitioning to a low latency platform
+                  boosting efficiency in client service delivery for a streamlined responsive user experience.</li>
+                <li>Implemented 4+ database optimization strategies, including normalization and integration analysis
+                  using MS SQL Server, resulting in the consolidation of 2 databases and a significant reduction in
+                  storage costs.</li>
+                <li>Introduced React for front-end development, and work on redesigning 2 dashboard speeding up activity
+                  rate by 11%.</li>
+              </ul>
+              </p>
+            </div>
           </div>
 
-          <div class="col icon-box">
-            <h4 class="title">Data Scientist @ Miko.AI</h4>
-            <p class="description">
-              I led a team of six to develop an innovative speech processing and voice cloning
-              system for Miko, a robotic platform. Our project collected 660 minutes of diverse raw audio data from 11
-              characters, employing OpenAI's Whisper model for transcription. We
-              ensured dataset quality through standardizing sampling rates and converting stereo to
-              mono-channel. Leveraging Nvidia's NeMo for text normalization on Whisper-generated transcripts, we
-              optimized model compatibility and efficiency in training. Using the VITS model on ESPNet for voice
-              synthesis, including Singing Voice Synthesis for children, our approach received favorable MOS scores,
-              affirming success in creating an engaging voice system for Miko.
-            </p>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="icon-box">
+              <h4 class="title">Data Scientist</h4>
+              <h5 class="subtitle">Miko.AI</h5>
+              <p class="description">
+              <ul>
+                <li>Led a team of 6, leveraging OpenAI's powerful Whisper large-v2 model to analyze raw audio data,
+                  creating accurate transcripts for thorough examination and constructing a speech synthesis model.</li>
+                <li>Engineered timestamped audio clips of ≤ 10s using librosa, and AudioSegment to facilitate
+                  investigation, and employed Mean Opinion Score (MOS) to curate high-quality audio files at 22.05kHz
+                  with MOS score ≥ 2.5, enhancing data quality.</li>
+                <li>Fine-tuned VITS model via ESPNet toolkit for text-to-speech, enabling 10+ dynamic personalized
+                  voices and developed a cross-singer voice conversion model (SVC) for transformative robotic
+                  implementation.</li>
+              </ul>
+              </p>
+            </div>
           </div>
 
-          <div class="col icon-box">
-            <h4 class="title">ML Researcher @ Carnegie Mellon University</h4>
-            <p class="description">
-              In my research, I gathered a dataset comprising 357 short audio signals, each
-              lasting ≤ 10s, each of whom underwent two COVID tests. I preprocessed the audio data to extract mel
-              spectrogram features. I observed intriguing patterns providing insights into linguistic nuances. To
-              develop predictive models, I employed CNN and LSTM architectures on the data. I fine-tuned the models
-              using varied hyperparameters. The result was an impressive 85.7% accuracy when evaluated on a combined
-              test and validation dataset. This research demonstrates the effectiveness of the in capturing relevant
-              linguistic and coughing patterns within the collected audio signals.
-            </p>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="icon-box">
+              <h4 class="title">ML Researcher</h4>
+              <h5 class="subtitle">Carnegie Mellon University</h5>
+              <p class="description">
+              <ul>
+                <li>Gathered a dataset comprising 357 short audio signals, each lasting ≤ 10s.</li>
+                <li>Each audio signal underwent two COVID tests.</li>
+                <li>Preprocessed the audio data to extract mel spectrogram features.</li>
+                <li>Observed intriguing patterns providing insights into linguistic nuances.</li>
+                <li>Employed CNN and LSTM architectures on the data to develop predictive models.</li>
+                <li>Fine-tuned the models using varied hyperparameters.</li>
+                <li>Achieved an impressive 85.7% accuracy when evaluated on a combined test and validation dataset.</li>
+                <li>Demonstrates the effectiveness of capturing relevant linguistic and coughing patterns within the
+                  collected audio signals.</li>
+              </ul>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -187,124 +202,93 @@
           <h2>Projects</h2>
         </div>
 
-        <div class="row justify-content-center">
-          <div class="col projects-item border border-1 rounded-1">
-            <div class="projects-wrap text-center">
+        <div class="row justify-content-center gap-3">
+          <div class="col-lg-4 col-md-6 col-sm-12 p-2 border border-2 border-outline-secondary rounded-3">
+            <div class="projects-wrap">
               <h4>Movie Recommendation System</h4>
               <p>
-                I led the movie recommendation system development, selecting the best model after thorough evaluations.
-                Using Kafka streams for real-time data, I designed an efficient algorithm. Containerizing with Docker, I
-                deployed two containers for load balancing (70% and 30%). Jenkins facilitated a robust CI pipeline with
-                5+ tests, achieving 89.55% code coverage. The recommendation system, serving 1 million users, delivered
-                recommendations within 500 ms for 40% of requests, ensuring equitable recommendations and system
-                integrity.
+              <ul>
+                <li>Built deployment server in Flask to host containerized models using Docker and listen to Kafka
+                  stream requests.</li>
+                <li>Developed ML-based system supporting 1 million users providing recommendations within 500 ms for 40%
+                  of user requests.</li>
+                <li>Deployed two containers for load balancing (70% and 30%) by containerizing with Docker.</li>
+                <li>Facilitated a robust CI pipeline with Jenkins, including 5+ unit tests, achieving 89.55% code
+                  coverage.</li>
+              </ul>
               </p>
-              <!-- <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">Read More</button> -->
             </div>
           </div>
 
-          <div class="col projects-item border border-1 rounded-1">
-            <div class="projects-wrap text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 p-2 border border-2 border-outline-secondary rounded-3">
+            <div class="projects-wrap">
               <h4>Question Answering System</h4>
               <p>
-                Developing an advanced Question Generation and Answering System involved
-                experimenting with HuggingFace's T5 transformer for question generation and integrating a pretrained
-                roBERTa model for nuanced question answering. The multi-stage process included SpaCy for tokenization
-                and coreference resolution. The system, containerized using Docker, achieved a balanced approach to
-                correctness, relevance, and diversity in generated questions, showcasing expertise in transformer models
-                and advanced NLP methodologies.
+              <ul>
+                <li>Experimented with HuggingFace's T5 transformer for question generation.</li>
+                <li>Integrated a pretrained roBERTa model for nuanced question answering.</li>
+                <li>Utilized SpaCy for tokenization and coreference resolution in the multi-stage process.</li>
+                <li>Containerized the system using Docker.</li>
+                <li>Achieved a balanced approach to correctness, relevance, and diversity in generated questions.</li>
+                <li>Showcased expertise in transformer models and advanced NLP methodologies.</li>
+              </ul>
               </p>
-              <!-- <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">Read More</button> -->
             </div>
           </div>
-        </div>
 
-        <div class="row justify-content-center">
-          <div class="col projects-item border border-1 rounded-1">
-            <div class="projects-wrap text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 p-2 border border-2 border-outline-secondary rounded-3">
+            <div class="projects-wrap">
               <h4>Deconstructing Sexual Stereotypes in LLMs</h4>
               <p>
-                Generated gender-neutral text from 700k WikiBio dataset using rule-based methods and
-                regular expressions. Generated prompts by appending sexual identity trigger words to contextualize LLM
-                responses for analysis. Employed SHAP analysis to detect and mitigate unconscious bias in LLM outputs
-                formulating text-to-text style transfer with chain-of-thought prompting reducing regard difference from
-                0.15 to 0.06.
+              <ul>
+                <li>Generated gender-neutral text from 700k WikiBio dataset using rule-based methods and regular
+                  expressions.</li>
+                <li>Generated prompts by appending sexual identity trigger words to contextualize LLM responses for
+                  analysis.</li>
+                <li>Employed SHAP analysis to detect and mitigate unconscious bias in LLM outputs.</li>
+                <li>Formulated text-to-text style transfer with chain-of-thought prompting.</li>
+                <li>Reduced regard difference from 0.15 to 0.06 through the analysis and adjustments.</li>
+              </ul>
               </p>
-              <!-- <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">Read More</button> -->
             </div>
           </div>
 
-          <div class="col projects-item border border-1 rounded-1">
-            <div class="projects-wrap text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 p-2 border border-2 border-outline-secondary rounded-3">
+            <div class="projects-wrap">
               <h4>Detecting Onsets Using EEG Signals</h4>
               <p>
-                Implemented a novel approach in PyTorch utilizing deep learning techniques to
-                predict onsets of audios obtained from a publicly available dataset containing EEG signals of 20
-                participants listening to 10 songs. Improved upon the existing baseline metrics with a recall of 0.9245
-                from 0.4, F1 score of 0.6786 from 0.54, and Area Under the Curve (AUC) score of 0.605 from 0.54.
+              <ul>
+                <li>Implemented a novel approach in PyTorch utilizing deep learning techniques to predict onsets of
+                  audios.</li>
+                <li>Utilized a publicly available dataset containing EEG signals of 20 participants listening to 10
+                  songs.</li>
+                <li>Improved upon the existing baseline metrics:
+                  <ul>
+                    <li>Recall increased from 0.4 to 0.9245.</li>
+                    <li>F1 score increased from 0.54 to 0.6786.</li>
+                    <li>Area Under the Curve (AUC) score increased from 0.54 to 0.605.</li>
+                  </ul>
+                </li>
+              </ul>
               </p>
-              <!-- <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">Read More</button> -->
             </div>
           </div>
-        </div>
 
-
-        <div class="row justify-content-center">
-          <div class="col-6 projects-item border border-1 rounded-1">
-            <div class="projects-wrap text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 p-2 border border-2 border-outline-secondary rounded-3">
+            <div class="projects-wrap">
               <h4>ASL to Text Translation as an Assistive Technology</h4>
               <p>
-                We tested ResNet-50, ResNet-34, and ResNet-18 on a dataset
-                initially comprising 87,000 images, later transitioning to 10,000 training and
-                3,000 validation images for Raspberry Pi compatibility. We focused on top-1 accuracy, optimizing models
-                for on-device processing by exploring compression techniques like quantization and pruning. Prioritizing
-                efficiency metrics guided our selection of models for deployment on Raspberry-Pi.
+              <ul>
+                <li>Tested ResNet-50, ResNet-34, and ResNet-18 on a dataset initially comprising 87,000 images.</li>
+                <li>Transitioned to 10,000 training and 3,000 validation images for Raspberry Pi compatibility.</li>
+                <li>Focused on top-1 accuracy in optimization efforts.</li>
+                <li>Explored compression techniques like quantization and pruning for on-device processing.</li>
+                <li>Prioritized efficiency metrics to guide the selection of models for deployment on Raspberry Pi.</li>
+              </ul>
               </p>
-              <!-- <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">Read More</button> -->
             </div>
           </div>
         </div>
-
-        <!-- Modal -->
-        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Deconstructing Sexual Stereotypes in
-                    Large
-                    Language Models</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <p>In the course of this research, I conducted an extensive comparative analysis of biases inherent in
-                    Large Language Models (LLMs), with a specific focus on how these models depict sexual identities,
-                    particularly within the LGBTQIA+ community. The methodology employed gender-neutral biographies as
-                    prompts to assess bias in LLM outputs, employing regard scores as a metric, revealing discernible
-                    biases against individuals identifying as queer. Various metrics such as word clouds, pointwise
-                    mutual
-                    information, t-SNE visualizations, average cosine similarity, and regard scores were utilized to
-                    quantitatively and visually represent biases present in LLM-generated text.</p>
-
-                  <p>While recognizing the importance of acknowledging the queer struggle in LLM-generated text, the
-                    study
-                    underscored the necessity of addressing representational bias and qualitative variations in LLM
-                    outputs across diverse sexual identities. Moreover, a proposed post-hoc debiasing approach, grounded
-                    in chain-of-thought prompting using SHAP analysis, aimed to enhance regard scores while preserving
-                    contextual information linked to the queer struggle. By leveraging the WikiBio dataset for
-                    gender-neutral prompts and addressing biases in LLMs trained on heteronormative and cisnormative
-                    language, this research contributes to the ongoing discourse on mitigating biases in language
-                    models,
-                    advocating for inclusivity and fairness in Natural Language Processing applications.</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
       </div>
 
       </div>
