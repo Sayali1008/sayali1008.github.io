@@ -1,0 +1,66 @@
+/* ─── THEME ──────────────────────────────────────────────────────────────────
+   Light/dark theme. Toggle via [data-theme] on <html>, or respects
+   prefers-color-scheme when no data-theme is set.
+
+   --bg        page background
+   --surface   card / nav surface
+   --ink       primary text
+   --muted     secondary text / labels
+   --accent    brand highlight (CTAs, active states, badges)
+   --border    dividers / outlines
+   --accent-text  text on accent-coloured buttons
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Default: light */
+html {
+  --bg:           #F4F7F9;
+  --surface:      #FFFFFF;
+  --ink:          #0F172A;
+  --muted:        #475569;
+  --accent:       #0D9488;
+  --border:       #CBD5E1;
+  --accent-text:  #FFFFFF;
+  --blob-accent:  #065f5a;
+  --blob-muted:   #1e2f44;
+}
+
+/* System dark preference (no explicit toggle set) */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    --bg:           #181E29;
+    --surface:      #222A36;
+    --ink:          #E2E8F0;
+    --muted:        #94A3B8;
+    --accent:       #14B8A6;
+    --border:       #2E3A4E;
+    --accent-text:  #0F172A;
+    --blob-accent:  #14B8A6;
+    --blob-muted:   #94A3B8;
+  }
+}
+
+/* Explicit dark toggle */
+html[data-theme="dark"] {
+  --bg:           #181E29;
+  --surface:      #222A36;
+  --ink:          #E2E8F0;
+  --muted:        #94A3B8;
+  --accent:       #14B8A6;
+  --border:       #2E3A4E;
+  --accent-text:  #0F172A;
+  --blob-accent:  #14B8A6;
+  --blob-muted:   #94A3B8;
+}
+
+/* Explicit light toggle */
+html[data-theme="light"] {
+  --bg:           #F4F7F9;
+  --surface:      #FFFFFF;
+  --ink:          #0F172A;
+  --muted:        #475569;
+  --accent:       #0D9488;
+  --border:       #CBD5E1;
+  --accent-text:  #FFFFFF;
+  --blob-accent:  #065f5a;
+  --blob-muted:   #1e2f44;
+}

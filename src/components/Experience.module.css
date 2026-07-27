@@ -1,0 +1,147 @@
+.section {
+  background: var(--tint-experience, var(--bg));
+}
+
+.timeline {
+  position: relative;
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* vertical centre line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: var(--border);
+}
+
+@media (max-width: 768px) {
+  .timeline::before { left: 16px; }
+}
+
+.entry {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 0 56px 0;
+  position: relative;
+}
+
+.entry:nth-child(even) {
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .entry,
+  .entry:nth-child(even) {
+    justify-content: flex-start;
+    padding-left: 48px;
+  }
+}
+
+/* accent dot on the line */
+.entry::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .entry::before { left: 16px; }
+}
+
+.card {
+  width: calc(50% - 48px);
+  padding: 24px 28px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .card { width: 100%; }
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.role {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.badgePill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: var(--accent);
+  color: var(--accent-text, #fff);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.orgLine {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 2px;
+}
+
+.dates {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.description {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}

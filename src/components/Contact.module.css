@@ -1,0 +1,93 @@
+.section {
+  background: var(--tint-contact, var(--bg));
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 56px 64px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle radial glow in bottom-right */
+.card::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.heading {
+  font-size: clamp(36px, 5vw, 52px);
+  font-weight: 900;
+  color: var(--ink);
+  line-height: 1.1;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.sub {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 40px;
+  max-width: 680px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.emailBtn {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-text, #fff);
+  transition: opacity 0.2s;
+  letter-spacing: 0.04em;
+}
+
+.emailBtn:hover {
+  opacity: 0.85;
+}
+
+.socialBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  padding: 11px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  transition: color 0.2s, border-color 0.2s;
+  letter-spacing: 0.04em;
+}
+
+.socialBtn:hover {
+  color: var(--ink);
+  border-color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 36px 28px;
+  }
+}
