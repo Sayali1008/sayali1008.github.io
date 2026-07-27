@@ -29,9 +29,6 @@ export default function Contact() {
         >
           <p className="section-label">05 / Get In Touch</p>
           <h2 className={styles.heading}>Let's build something.</h2>
-          <p className={styles.sub}>
-            Open to Forward Deployed Engineer, Software Engineer, and AI Engineer roles.
-          </p>
           <div className={styles.links}>
             <a href="mailto:moghesayali@gmail.com" className={styles.emailBtn}>
               Email
